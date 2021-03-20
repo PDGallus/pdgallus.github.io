@@ -5,6 +5,11 @@
     border-radius: 16px;
 }
 
+.primary-button:focus,
+.secondary-button:focus {
+    outline: 0;
+}
+
 .primary-button {
     border-color: deepskyblue;
     background-color: dodgerblue;
