@@ -1,0 +1,36 @@
+.card-component {
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px gray;
+    padding: 8px;
+    min-height: 180px;
+}
+
+.preview-card {
+    display: grid;
+    grid-template-columns: 3fr 1fr 24px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+            "cardTitle cardImage cardNav"
+            "cardSummary cardSummary cardNav";
+    height: 20vh;
+}
+
+.card-component .card-title {
+    grid-area: cardTitle;
+    font-family: latoblack, sans-serif;
+}
+.card-component .card-image {
+    grid-area: cardImage;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+}
+.card-component .card-summary {
+    grid-area: cardSummary;
+}
+.card-component .card-nav-indicator {
+    grid-area: cardNav;
+    display: flex;
+    align-items: center;
+}
