@@ -26,6 +26,10 @@
     font-family: latoblack, sans-serif;
 }
 
+.card-component .card-title h1 {
+    margin-top: 8px;
+}
+
 .card-component .card-image-container,
 .preview-card .card-image-container {
     grid-area: cardImage;
