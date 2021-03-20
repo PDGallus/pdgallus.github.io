@@ -1,0 +1,9 @@
+.component-card {
+/*    style card here and reuse it throughout the project */
+    height: 20vh;
+    background-color: aqua;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px gray;
+    padding: 8px;
+}
