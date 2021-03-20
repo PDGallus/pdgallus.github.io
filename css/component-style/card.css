@@ -1,18 +1,24 @@
 .card-component {
+    display: grid;
     margin-bottom: 8px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px gray;
     padding: 8px;
     min-height: 180px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "cardTitle"
+            "cardImage"
+            "cardText";
 }
 
 .preview-card {
-    display: grid;
     grid-template-columns: 3fr 1fr 24px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
             "cardTitle cardImage cardNav"
-            "cardSummary cardSummary cardNav";
+            "cardText cardText cardNav";
 }
 
 .card-component .card-title {
@@ -20,21 +26,36 @@
     font-family: latoblack, sans-serif;
 }
 
-.card-component .card-image {
+.card-component .card-image-container,
+.preview-card .card-image-container {
     grid-area: cardImage;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 0;
+}
+
+.card-component .card-image-container {
+    width: 100%;
+    height: 100px;
+}
+
+.preview-card .card-image-container {
     width: 70px;
     height: 70px;
 }
 
-.card-component .card-image .thumbnail {
+.card-component .card-image-container .thumbnail,
+.card-component .card-image-container .card-image {
     align-self: center;
 }
-.card-component .card-summary {
-    grid-area: cardSummary;
+
+.card-component .card-image-container .card-image {
+    height: 100%;
+}
+
+.card-component .card-text {
+    grid-area: cardText;
 }
 .card-component .card-nav-indicator {
     grid-area: cardNav;
