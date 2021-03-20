@@ -1,5 +1,6 @@
 @import url(component-style/button.css);
 @import url(component-style/card.css);
+
 /* General body styling */
 body {
     margin: 0;
@@ -7,6 +8,17 @@ body {
     font-family: 'latoregular', sans-serif;
     color: #4f4f6f;
     overflow: hidden;
+}
+
+.content-area {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 1fr 40px;
+    grid-template-areas:
+            "header"
+            "article"
+            "footer";
 }
 
 /* Header */
@@ -41,4 +53,14 @@ body {
 .undecorated-link {
     text-decoration: none;
     color: #4f4f6f;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    background-color: #f4f4fc;
 }
