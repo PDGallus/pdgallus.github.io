@@ -5,7 +5,8 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
         <title>OMG</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+              rel="stylesheet">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -13,34 +14,47 @@
             <header class="header-container">
                 <div class="title">Pr<span class="char-highlight">O</span>gramming <span class="char-highlight">M</span>adness
                     Blo<span class="char-highlight">G</span></div>
-                <button class="component-button">Subscribe</button>
+                <button class="primary-button">Subscribe</button>
             </header>
             <article class="article">
                 <div class="navigation-container">
-                    Where can I go from here?
+                    <div class="breadcrump-container">
+                        <img class="breadcrump" src="images/home-24px.svg" alt="Home Logo">
+                    </div>
                 </div>
                 <div class="cards-container">
                     <a class="undecorated-link" href="blog-post/blog-post.html">
-                        <div class="component-card">
-                            Sneak peak of the newest stuff
+                        <div class="card-component preview-card">
+                            <div class="card-title">
+                                <h1>Flutter released V2.0!!!</h1>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/flutterio-icon.svg" alt="Flutter Logo">
+                            </div>
+                            <div class="card-summary">
+                                With the beginning of March the Flutter Team announced a stable Flutter release V2.0. Why a major version update? Continue reading to find out!
+                            </div>
+                            <div class="card-nav-indicator">
+                                <img src="images/navigate_next-24px.svg" alt="Navigation Indicator">
+                            </div>
                         </div>
                     </a>
-                    <div class="component-card">
+                    <div class="card-component preview-card">
                         Still hot stuff
                     </div>
-                    <div class="component-card">
+                    <div class="card-component preview-card">
                         Just like the newspaper from yesterday
                     </div>
-                    <div class="component-card">
+                    <div class="card-component preview-card">
                         Just like the newspaper from yesterday
                     </div>
-                    <div class="component-card">
+                    <div class="card-component preview-card">
                         Just like the newspaper from yesterday
                     </div>
-                    <div class="component-card">
+                    <div class="card-component preview-card">
                         Just like the newspaper from yesterday
                     </div>
-                    <div class="component-card">
+                    <div class="card-component preview-card">
                         Just like the newspaper from yesterday
                     </div>
                 </div>
@@ -50,7 +64,9 @@
                     © PDGallus 2021
                 </div>
                 <div class="design-system">
-                    Show me how you work!
+                    <button class="secondary-button">
+                        Design System
+                    </button>
                 </div>
             </footer>
         </div>

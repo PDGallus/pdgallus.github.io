@@ -1,0 +1,18 @@
+.primary-button,
+.secondary-button {
+/*    style button here and reuse it throughout the project */
+    height: 32px;
+    border-radius: 16px;
+}
+
+.primary-button {
+    border-color: deepskyblue;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.secondary-button {
+    border-color: dodgerblue;
+    background-color: white;
+    color: dodgerblue;
+}
