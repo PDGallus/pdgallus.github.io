@@ -1,0 +1,24 @@
+/* Article */
+.article {
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px;
+    grid-template-areas:
+            "cards"
+            "nav";
+    overflow: hidden;
+}
+
+.article .navigation-container {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.article .cards-container {
+    grid-area: cards;
+    padding: 8px 8px 0 8px;
+    overflow-y: scroll;
+}
