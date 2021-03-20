@@ -23,11 +23,18 @@
 
 .card-component .card-title {
     grid-area: cardTitle;
+    display: flex;
+    justify-content: center;
     font-family: latoblack, sans-serif;
 }
 
+.preview-card .card-title h1,
 .card-component .card-title h1 {
     margin-top: 8px;
+}
+
+.card-component .card-title h1 {
+    margin-bottom: 8px;
 }
 
 .card-component .card-image-container,
