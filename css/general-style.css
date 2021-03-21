@@ -4,8 +4,8 @@
 
 /* General body styling */
 body {
-    background-color: lightsteelblue;
     display: grid;
+    position: fixed;
     grid-template-columns: 1fr;
     grid-template-rows: 48px 1fr 40px 40px;
     grid-template-areas:
@@ -17,7 +17,8 @@ body {
     font-size: 16px;
     font-family: 'latoregular', sans-serif;
     color: var(--text-color);
-    height: 100vh;
+    background-color: lightsteelblue;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -27,7 +28,6 @@ body {
 .main-content,
 .footer {
     background-color: white;
-    width: 100%;
 }
 
 /* Header */
