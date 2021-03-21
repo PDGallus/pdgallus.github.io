@@ -15,7 +15,7 @@
 
 .preview-card {
     grid-template-columns: 3fr 1fr 24px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     grid-template-areas:
             "cardTitle cardImage cardNav"
             "cardText cardText cardNav";
@@ -48,7 +48,6 @@
 
 .card-component .card-image-container {
     width: 100%;
-    height: 100px;
 }
 
 .preview-card .card-image-container {
