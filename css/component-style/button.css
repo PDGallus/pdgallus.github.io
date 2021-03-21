@@ -5,6 +5,7 @@
     height: 32px;
     border-radius: 16px;
     font-family: 'latoregular', sans-serif;
+    text-decoration: none;
 }
 
 .primary-button:focus,

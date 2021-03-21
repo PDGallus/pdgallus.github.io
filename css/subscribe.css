@@ -1,0 +1,20 @@
+@import url(general-style.css);
+@import url(fonts.css);
+
+.main-content {
+    display: block;
+}
+
+.main-content .subscribe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .subscribe-form #subscribe-email {
+    width: 25vw;
+    margin-bottom: 16px;
+}
+
+.main-content .subscribe-form .subscribe-button {
+    width: 25vw;
+}

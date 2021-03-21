@@ -1,3 +1,6 @@
 @import url(general-style.css);
 @import url(fonts.css);
 
+.main-content {
+    display: block;
+}
