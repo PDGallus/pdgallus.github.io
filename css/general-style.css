@@ -55,6 +55,10 @@ body {
     color: var(--text-color);
 }
 
+.link {
+    color: var(--primary-color);
+}
+
 /* Footer */
 .footer {
     grid-area: footer;
