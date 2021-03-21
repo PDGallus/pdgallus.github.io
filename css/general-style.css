@@ -1,9 +1,10 @@
+@import url(variables.css);
 @import url(component-style/button.css);
 @import url(component-style/card.css);
-@import url(colors.css);
 
 /* General body styling */
 body {
+    background-color: lightsteelblue;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 48px 1fr 40px 40px;
@@ -18,6 +19,15 @@ body {
     color: var(--text-color);
     height: 100vh;
     overflow: hidden;
+}
+
+/* General Section Styling */
+.header-container,
+.navigation-container,
+.main-content,
+.footer {
+    background-color: white;
+    width: 100%;
 }
 
 /* Header */
@@ -81,4 +91,54 @@ body {
     justify-content: space-between;
     padding: 0 8px;
     background-color: #f4f4fc;
+}
+
+@media screen and (min-width: 301px) {
+
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        grid-template-rows: 48px 40px 1fr 40px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header-container,
+    .navigation-container,
+    .main-content,
+    .footer {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .header-container {
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        -webkit-box-shadow: none;
+        z-index: 1001;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .header-container,
+    .navigation-container,
+    .main-content,
+    .footer {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .header-container {
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        -webkit-box-shadow: none;
+        z-index: 1001;
+        margin: 0 auto;
+    }
 }

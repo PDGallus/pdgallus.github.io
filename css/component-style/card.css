@@ -10,7 +10,8 @@
     grid-template-areas:
             "cardTitle"
             "cardImage"
-            "cardText";
+            "cardText"
+            "navBack";
 }
 
 .preview-card {
@@ -28,13 +29,15 @@
     font-family: latoblack, sans-serif;
 }
 
-.preview-card .card-title h1,
-.card-component .card-title h1 {
+.preview-card .card-title h2,
+.card-component .card-title h2 {
     margin-top: 8px;
 }
 
-.card-component .card-title h1 {
+.card-component .card-title h2 {
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .card-component .card-image-container,
@@ -48,6 +51,7 @@
 
 .card-component .card-image-container {
     width: 100%;
+    align-self: center;
 }
 
 .preview-card .card-image-container {
@@ -58,6 +62,7 @@
 .card-component .card-image-container .thumbnail,
 .card-component .card-image-container .card-image {
     align-self: center;
+    max-width: 100%;
 }
 
 .card-component .card-image-container .card-image {
@@ -67,8 +72,44 @@
 .card-component .card-text {
     grid-area: cardText;
 }
-.card-component .card-nav-indicator {
+
+.card-component .navigate-back {
+    grid-area: navBack;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.preview-card .card-nav-indicator {
     grid-area: cardNav;
     display: flex;
     align-items: center;
+}
+
+@media screen and (min-width: 301px) {
+    .card-component .navigate-back {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card-component {
+        grid-template-columns: 1fr 150px;
+        grid-column-gap: 16px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cardTitle cardImage"
+            "cardText cardText"
+            "navBack navBack";
+    }
+
+    .card-component .navigate-back {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .card-component .navigate-back {
+        display: flex;
+    }
 }
