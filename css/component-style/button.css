@@ -1,6 +1,5 @@
 .primary-button,
 .secondary-button {
-/*    style button here and reuse it throughout the project */
     height: 32px;
     border-radius: 16px;
 }
