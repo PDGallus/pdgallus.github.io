@@ -1,7 +1,10 @@
+@import url(../fonts.css);
+
 .primary-button,
 .secondary-button {
     height: 32px;
     border-radius: 16px;
+    font-family: 'latoregular', sans-serif;
 }
 
 .primary-button:focus,
