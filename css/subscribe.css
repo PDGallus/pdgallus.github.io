@@ -8,13 +8,42 @@
 .main-content .subscribe-form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-top: 16px;
+    margin-right: 8px;
 }
 
-.main-content .subscribe-form #subscribe-email {
-    width: 25vw;
+.main-content .subscribe-form #subscribe-email,
+.main-content .subscribe-form #subscribe-name {
+    width: 98%;
+    line-height: 1.25rem;
     margin-bottom: 16px;
 }
 
 .main-content .subscribe-form .subscribe-button {
-    width: 25vw;
+    width: 100%;
+}
+
+@media screen and (min-width: 616px) {
+    .main-content .subscribe-form #subscribe-email,
+    .main-content .subscribe-form #subscribe-name {
+        width: 50%;
+        margin-bottom: 16px;
+    }
+
+    .main-content .subscribe-form .subscribe-button {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 816px) {
+    .main-content .subscribe-form #subscribe-email,
+    .main-content .subscribe-form #subscribe-name {
+        width: 50%;
+        margin-bottom: 16px;
+    }
+
+    .main-content .subscribe-form .subscribe-button {
+        width: 50%;
+    }
 }

@@ -4,6 +4,9 @@
     margin-bottom: 8px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px gray;
+    -o-box-shadow: 1px 1px 3px gray;
+    -moz-box-shadow: 1px 1px 3px gray;
+    -webkit-box-shadow: 1px 1px 3px gray;
     padding: 8px;
 }
 
@@ -24,6 +27,10 @@
     grid-template-areas:
             "cardTitle cardImage cardNav"
             "cardText cardText cardNav";
+}
+
+.preview-card:focus {
+    border-radius: 5px;
 }
 
 .card-component .card-title {
@@ -79,7 +86,7 @@
 
 .card-component .navigate-back {
     grid-area: navBack;
-    display: none;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
@@ -106,10 +113,6 @@
             "cardText cardText"
             "navBack navBack";
     }
-
-    .card-component .navigate-back {
-        display: flex;
-    }
 }
 
 @media screen and (min-width: 816px) {
@@ -121,9 +124,5 @@
             "cardTitle cardImage"
             "cardText cardText"
             "navBack navBack";
-    }
-
-    .card-component .navigate-back {
-        display: flex;
     }
 }
