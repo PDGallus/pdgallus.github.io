@@ -15,7 +15,6 @@
 
 .main-content .subscribe-form #subscribe-email,
 .main-content .subscribe-form #subscribe-name {
-    width: 98%;
     line-height: 1.25rem;
     margin-bottom: 16px;
 }
