@@ -12,6 +12,29 @@ body {
             "main";
     overflow-y: scroll;
 }
-.blog-content {
-    display: block;
+
+.blog-content .blog-image-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.blog-content .blog-image-container .blog-image {
+    width: 100%;
+}
+
+.blog-content .blog-text .quote-container {
+    display: flex;
+    border-radius: 5px;
+    background-color: #d5e5ff;
+}
+
+.blog-content .blog-text .quote-banner {
+    background-color: var(--text-color);
+    border-radius: 5px 0 0 5px;
+    width: 16px;
+}
+
+.blog-content .blog-text blockquote {
+    margin-right: 8px;
 }
