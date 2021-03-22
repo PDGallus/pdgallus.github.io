@@ -6,11 +6,10 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 40px;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
             "header"
-            "main"
-            "footer";
+            "main";
     overflow-y: scroll;
 }
 .blog-content {
