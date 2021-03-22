@@ -1,0 +1,32 @@
+.author-info {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, 24px) auto;
+    grid-column-gap: 16px;
+    grid-template-areas:
+            "avatar title"
+            "avatar name"
+            "avatar employer"
+            "bio bio";
+}
+
+.author-info .title {
+    grid-area: title;
+}
+
+.author-info .name {
+    grid-area: name;
+}
+
+.author-info .employer {
+    grid-area: employer;
+}
+
+.author-info .bio {
+    grid-area: bio;
+}
+
+.author-info .avatar-container {
+    grid-area: avatar;
+}

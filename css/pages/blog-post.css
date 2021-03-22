@@ -1,0 +1,18 @@
+@import url(../general-style.css);
+@import url(../fonts.css);
+@import url(../component-style/author-info.css);
+@import url(../component-style/avatar.css);
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 40px;
+    grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    overflow-y: scroll;
+}
+.blog-content {
+    display: block;
+}

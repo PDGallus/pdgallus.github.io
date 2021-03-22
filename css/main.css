@@ -1,3 +1,35 @@
 @import url(fonts.css);
-@import url(blog-home.css);
+@import url(component-style/footer.css);
 @import url(general-style.css);
+
+body {
+    display: grid;
+    position: fixed;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 40px 1fr 40px;
+    grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    overflow: hidden;
+}
+
+.title {
+    grid-area: header;
+    margin: 8px;
+}
+
+/* Navigation */
+.navigation-container {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+}
+
+/* Main content*/
+.blog-content {
+    grid-area: main;
+    padding: 8px;
+    overflow-y: scroll;
+}

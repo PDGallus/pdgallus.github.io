@@ -2,76 +2,30 @@
 @import url(component-style/button.css);
 @import url(component-style/card.css);
 
-/* General body styling */
 body {
-    display: grid;
-    position: fixed;
-    grid-template-columns: 1fr;
-    grid-template-rows: 48px 1fr 40px 40px;
-    grid-template-areas:
-            "header"
-            "main"
-            "nav"
-            "footer";
     margin: 0;
     font-size: 16px;
     font-family: 'latoregular', sans-serif;
     color: var(--text-color);
-    background-color: lightsteelblue;
+    background-color: white;
     height: 100%;
-    overflow: hidden;
 }
 
 /* General Section Styling */
 .header-container,
 .navigation-container,
-.main-content,
+.blog-content,
 .footer {
     background-color: white;
 }
 
-/* Header */
-.header-container {
-    grid-area: header;
-    display: flex;
-    padding: 8px;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 1px 3px grey;
-    -o-box-shadow: 0 1px 3px grey;
-    -moz-box-shadow: 0 1px 3px grey;
-    -webkit-box-shadow: 0 1px 3px grey;
-    z-index: 1001;
-}
-
-.header-container .title {
-    font-size: 1em;
-}
-
-.header-container .char-highlight {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-/* Navigation */
-.navigation-container {
-    display: flex;
-    align-items: center;
+.header-container,
+.navigation-container,
+.blog-content {
     padding: 0 8px;
 }
 
-.navigation-container .breadcrump-container {
-    display: flex;
-    align-items: center;
-}
 
-/* Main content*/
-.main-content {
-    grid-area: main;
-    padding: 8px 8px 0 8px;
-    overflow-y: scroll;
-}
 
 /* Links */
 .undecorated-link {
@@ -110,7 +64,7 @@ body {
 
     .header-container,
     .navigation-container,
-    .main-content,
+    .blog-content,
     .footer {
         width: 600px;
         margin: 0 auto;
@@ -138,7 +92,7 @@ body {
 
     .header-container,
     .navigation-container,
-    .main-content,
+    .blog-content,
     .footer {
         width: 800px;
         margin: 0 auto;
@@ -153,7 +107,7 @@ body {
         margin: 0 auto;
     }
 
-    .main-content {
+    .blog-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
