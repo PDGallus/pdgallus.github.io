@@ -2,22 +2,21 @@
 @import url(../fonts.css);
 @import url(../component-style/author-info.css);
 @import url(../component-style/avatar.css);
+@import url(../component-style/blockquote.css);
 
 body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-            "header"
-            "main";
+    display: flex;
+    flex-direction: column;
     overflow-y: scroll;
 }
 
+/* Main */
 .blog-content {
     display: flex;
     flex-direction: column;
 }
 
+/* Blog image*/
 .blog-content .blog-image-container {
     display: flex;
     flex-direction: column;
@@ -28,20 +27,12 @@ body {
     width: 100%;
 }
 
-.blog-content .blog-text .quote-container {
-    display: flex;
-    border-radius: 5px;
-    background-color: #d5e5ff;
-}
-
-.blog-content .blog-text .quote-banner {
-    background-color: var(--text-color);
-    border-radius: 5px 0 0 5px;
-    width: 16px;
-}
-
 .blog-content .blog-text blockquote {
     margin-right: 8px;
+}
+
+.blog-content .social-share {
+    display: flex;
 }
 
 .blog-content .navigate-back {
@@ -53,4 +44,18 @@ body {
 .blog-content .navigate-back .back {
     display: flex;
     align-items: center;
+}
+
+@media screen and (min-width: 301px) {
+
+}
+
+@media screen and (min-width: 616px) {
+    .blog-content .blog-image-container .blog-image {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 816px) {
+
 }

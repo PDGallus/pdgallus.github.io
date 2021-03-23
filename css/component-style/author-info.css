@@ -1,5 +1,4 @@
 .author-info {
-    margin: 16px 0;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: repeat(3, 24px) auto;
@@ -9,6 +8,8 @@
             "avatar name"
             "avatar employer"
             "bio bio";
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .author-info .title {
