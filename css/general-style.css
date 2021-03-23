@@ -1,6 +1,5 @@
 @import url(variables.css);
-@import url(component-style/button.css);
-@import url(component-style/card.css);
+@import url(fonts.css);
 
 body {
     width: 100%;
