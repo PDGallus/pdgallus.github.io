@@ -12,7 +12,7 @@
     margin-bottom: 16px;
 }
 
-.author-info .title {
+.author-info .author-title {
     grid-area: title;
 }
 
