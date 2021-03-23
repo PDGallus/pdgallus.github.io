@@ -3,10 +3,11 @@
 .primary-button,
 .secondary-button {
     height: 32px;
-    min-width: 60px;
+    min-width: 64px;
     border-radius: 16px;
     font-family: 'latoregular', sans-serif;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .primary-button:focus,
@@ -15,7 +16,7 @@
 }
 
 .primary-button {
-    border-color: deepskyblue;
+    border-color: var(--primary-border-color);
     background-color: var(--primary-color);
     color: white;
 }

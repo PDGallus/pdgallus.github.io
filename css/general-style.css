@@ -34,10 +34,12 @@ body {
 .undecorated-link {
     text-decoration: none;
     color: var(--text-color);
+    cursor: pointer;
 }
 
 .link {
     color: var(--text-color);
+    cursor: pointer;
 }
 
 /* Footer */

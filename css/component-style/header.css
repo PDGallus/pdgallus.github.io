@@ -11,12 +11,3 @@
     z-index: 1001;
 }
 
-.header-container .title {
-    font-size: 1em;
-}
-
-.header-container .char-highlight {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: var(--primary-color);
-}
