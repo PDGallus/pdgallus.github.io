@@ -4,10 +4,5 @@
     padding: 8px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 3px grey;
-    -o-box-shadow: 0 1px 3px grey;
-    -moz-box-shadow: 0 1px 3px grey;
-    -webkit-box-shadow: 0 1px 3px grey;
-    z-index: 1001;
 }
 
