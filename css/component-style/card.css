@@ -1,6 +1,11 @@
-.card-component,
 .preview-card {
     display: grid;
+    grid-template-columns: 3fr 1fr 24px;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+            "title image nav"
+            "text text nav";
+    grid-row-gap: 8px;
     margin-bottom: 8px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px gray;
@@ -8,121 +13,45 @@
     -moz-box-shadow: 1px 1px 3px gray;
     -webkit-box-shadow: 1px 1px 3px gray;
     padding: 8px;
-}
-
-.card-component {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-            "cardTitle"
-            "cardImage"
-            "cardText"
-            "navBack";
-}
-
-.preview-card {
     min-height: 180px;
-    grid-template-columns: 3fr 1fr 24px;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-            "cardTitle cardImage cardNav"
-            "cardText cardText cardNav";
 }
 
 .preview-card:focus {
     border-radius: 5px;
 }
 
-.card-component .card-title {
-    grid-area: cardTitle;
+.preview-card .card-title {
+    grid-area: title;
     display: flex;
-    justify-content: center;
+    align-items: center;
     font-family: latoblack, sans-serif;
 }
 
-.preview-card .card-title h2,
-.card-component .card-title h2 {
+.preview-card .card-title h2 {
     margin-top: 8px;
 }
 
-.card-component .card-title h2 {
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.card-component .card-image-container,
-.preview-card .card-image-container {
-    grid-area: cardImage;
+.preview-card .image-container {
+    grid-area: image;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 0;
-}
-
-.card-component .card-image-container {
-    width: 100%;
-    align-self: center;
-}
-
-.preview-card .card-image-container {
     width: 70px;
     height: 70px;
 }
 
-.card-component .card-image-container .thumbnail,
-.card-component .card-image-container .card-image {
+.preview-card .image-container .thumbnail {
     align-self: center;
     max-width: 100%;
 }
 
-.card-component .card-image-container .card-image {
-    height: 100%;
+.preview-card .text {
+    grid-area: text;
 }
 
-.card-component .card-text {
-    grid-area: cardText;
-}
-
-.card-component .navigate-back {
-    grid-area: navBack;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.preview-card .card-nav-indicator {
-    grid-area: cardNav;
+.preview-card .indicator {
+    grid-area: nav;
     display: flex;
     align-items: center;
-}
-
-@media screen and (min-width: 301px) {
-    .card-component .navigate-back {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 616px) {
-    .card-component {
-        grid-template-columns: 1fr 150px;
-        grid-column-gap: 16px;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "cardTitle cardImage"
-            "cardText cardText"
-            "navBack navBack";
-    }
-}
-
-@media screen and (min-width: 816px) {
-    .card-component {
-        grid-template-columns: 1fr 150px;
-        grid-column-gap: 16px;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "cardTitle cardImage"
-            "cardText cardText"
-            "navBack navBack";
-    }
 }
