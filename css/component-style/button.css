@@ -3,6 +3,7 @@
 .primary-button,
 .secondary-button {
     height: 32px;
+    min-width: 60px;
     border-radius: 16px;
     font-family: 'latoregular', sans-serif;
     text-decoration: none;
