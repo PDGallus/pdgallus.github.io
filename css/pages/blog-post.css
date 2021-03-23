@@ -11,6 +11,10 @@ body {
     overflow-y: scroll;
 }
 
+.space {
+    padding: 0 8px;
+}
+
 /* Main */
 .blog-content {
     display: flex;
