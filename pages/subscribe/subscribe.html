@@ -4,40 +4,24 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <title>OMG</title>
-        <link rel="stylesheet" href="../../css/subscribe.css">
+        <link rel="stylesheet" href="../../css/pages/subscribe.css">
     </head>
     <body>
-        <header class="header-container">
+        <header class="header-container space">
             <h1 class="title">Philips Blog</h1>
         </header>
-        <nav class="navigation-container">
-
-        </nav>
-        <main class="blog-content">
-            <div class="card-component">
-                <div class="card-title">
-                    <h2>Stay informed about all the crazy things happen in development! Subscribe now and never ever miss the hottest news!</h2>
-                </div>
-                <div class="card-text">
-                    <form class="subscribe-form" action="../../index.html">
-                        <label for="subscribe-name">Please enter your name</label>
-                        <input type="text" id="subscribe-name" name="subscribe-name" />
-                        <label for="subscribe-email">Please enter your eMail address:</label>
-                        <input type="email" id="subscribe-email" name="subscribe-email" pattern=".+@.+"/>
-                        <button type="submit" class="subscribe-button primary-button">Subscribe</button>
-                    </form>
-                </div>
+        <main class="blog-content space">
+            <div class="subscribe-title">
+                <h2>Stay informed about all the crazy things happen in development! Subscribe now and never ever miss
+                    the hottest news!</h2>
             </div>
+            <form class="subscribe-form" action="../../index.html">
+                <label for="subscribe-name">Please enter your name</label>
+                <input type="text" id="subscribe-name" name="subscribe-name"/>
+                <label for="subscribe-email">Please enter your eMail address:</label>
+                <input type="email" id="subscribe-email" name="subscribe-email" pattern=".+@.+"/>
+                <button type="submit" class="subscribe-button primary-button">Subscribe</button>
+            </form>
         </main>
-        <footer class="footer">
-            <div class="copyright">
-                © PDGallus 2021
-            </div>
-            <div class="design-system">
-                <button class="secondary-button">
-                    Design System
-                </button>
-            </div>
-        </footer>
     </body>
 </html>

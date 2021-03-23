@@ -1,8 +1,33 @@
 @import url(../general-style.css);
-@import url(../fonts.css);
+@import url(../component-style/button.css);
+@import url(../component-style/header.css);
+@import url(../component-style/footer.css);
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "title"
+        "main";
+    height: 100vh;
+}
+
+.space {
+    padding: 8px;
+}
+
+.header-container {
+    grid-area: title;
+}
 
 .blog-content {
-    display: block;
+    grid-area: main;
+    height: 100%;
+}
+
+.blog-content .subscribe-title {
+    display: flex;
 }
 
 .blog-content .subscribe-form {
@@ -23,7 +48,21 @@
     width: 100%;
 }
 
-@media screen and (min-width: 616px) {
+@media screen and (min-width: 600px) {
+    .space {
+        padding: 0 16px;
+    }
+
+    .header-container,
+    .blog-content {
+        width: 568px;
+        margin: 0 auto;
+    }
+
+    .blog-content .subscribe-form {
+        align-items: center;
+    }
+
     .blog-content .subscribe-form #subscribe-email,
     .blog-content .subscribe-form #subscribe-name {
         width: 50%;
@@ -35,7 +74,13 @@
     }
 }
 
-@media screen and (min-width: 816px) {
+@media screen and (min-width: 800px) {
+    .header-container,
+    .blog-content {
+        width: 768px;
+        margin: 0 auto;
+    }
+
     .blog-content .subscribe-form #subscribe-email,
     .blog-content .subscribe-form #subscribe-name {
         width: 50%;
