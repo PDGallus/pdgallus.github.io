@@ -28,10 +28,12 @@ body {
     width: 100%;
 }
 
+/* Blockquote */
 .blog-content .blog-text blockquote {
     margin-right: 8px;
 }
 
+/* Social share */
 .blog-content .social-share {
     display: flex;
     justify-content: flex-end;
@@ -51,6 +53,7 @@ body {
     height: 100%
 }
 
+/* Navigate back */
 .blog-content .navigate-back {
     display: flex;
     justify-content: flex-end;
