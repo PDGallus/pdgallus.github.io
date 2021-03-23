@@ -1,8 +1,9 @@
 @import url(../general-style.css);
-@import url(../fonts.css);
 @import url(../component-style/author-info.css);
 @import url(../component-style/avatar.css);
 @import url(../component-style/blockquote.css);
+@import url(../component-style/button.css);
+@import url(../component-style/header.css);
 
 body {
     display: flex;
@@ -65,7 +66,20 @@ body {
 
 }
 
-@media screen and (min-width: 616px) {
+@media screen and (min-width: 600px) {
+    .space {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .header-container,
+    .navigation-container,
+    .blog-content,
+    .footer {
+        width: 568px;
+        margin: 0 auto;
+    }
+
     .blog-content .blog-image-container .blog-image {
         width: 50%;
     }
@@ -75,6 +89,12 @@ body {
     }
 }
 
-@media screen and (min-width: 816px) {
-
+@media screen and (min-width: 800px) {
+    .header-container,
+    .title,
+    .navigation-container,
+    .blog-content,
+    .footer {
+        width: 768px;
+    }
 }
