@@ -18,7 +18,6 @@ body {
 
 .title {
     grid-area: header;
-    padding: 0 8px;
     background-color: white;
 }
 
@@ -28,17 +27,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8px;
 }
 
 .navigation-container .link-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .navigation-container .link-container .link {
     margin-bottom: 8px;
-    align-self: center;
 }
 
 .navigation-container .button-container {
@@ -57,35 +55,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 8px;
-    padding: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     overflow-y: scroll;
-}
-
-@media screen and (min-width: 600px) {
-    /* Navigation */
-    .navigation-container {
-        align-items: center;
-        padding: 0 8px;
-    }
-
-    .navigation-container .link-container {
-        display: flex;
-        align-items: center;
-    }
-
-    .navigation-container .link-container .link {
-        margin-right: 8px;
-        align-self: center;
-    }
-
-    .navigation-container .button-container {
-        display: flex;
-    }
-
-    .navigation-container .button-container .primary-button {
-        margin-right: 16px;
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 600px) {
@@ -97,7 +69,6 @@ body {
         margin: 0 auto;
     }
 }
-
 
 @media screen and (min-width: 800px) {
     body {
@@ -122,7 +93,6 @@ body {
 
     /* Navigation */
     .navigation-container {
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;

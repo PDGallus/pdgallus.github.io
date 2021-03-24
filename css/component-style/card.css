@@ -1,7 +1,7 @@
 .preview-card {
     display: grid;
     grid-template-columns: 3fr 1fr 24px;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
             "title image nav"
             "text text nav";
@@ -13,6 +13,8 @@
     -moz-box-shadow: 1px 1px 3px gray;
     -webkit-box-shadow: 1px 1px 3px gray;
     padding: 8px;
+    min-height: 180px;
+    height: fit-content;
 }
 
 .preview-card:focus {
