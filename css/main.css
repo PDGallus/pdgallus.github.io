@@ -73,7 +73,7 @@ body {
 @media screen and (min-width: 800px) {
     body {
         grid-template-columns: 1fr 192px 576px 1fr;
-        grid-template-rows: auto auto 1fr 48px;
+        grid-template-rows: auto 1fr 48px;
         grid-template-areas:
                 ". header header ."
                 ". nav main ."
@@ -95,20 +95,18 @@ body {
     .navigation-container {
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-        padding: 0 8px;
+        align-items: flex-start;
     }
 
     .navigation-container .link-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 32px;
     }
 
     .navigation-container .link-container .link {
         margin-bottom: 16px;
-        align-self: center;
     }
 
     .navigation-container .button-container {
