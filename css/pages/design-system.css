@@ -6,6 +6,7 @@
 @import url(../component-style/blockquote.css);
 @import url(../component-style/footer.css);
 @import url(../component-style/header.css);
+@import url(../component-style/nav-back.css);
 
 body {
     display: grid;
@@ -27,15 +28,11 @@ body {
 .navigation-container .foundations {
     display: flex;
     flex-direction: column;
-}
-
-.navigation-container .foundations {
     margin-right: 32px;
 }
 
 .blog-content {
     grid-area: main;
-    height: 100%;
     overflow-y: scroll;
 }
 
@@ -85,6 +82,10 @@ body {
     color: white;
 }
 
+.blog-content .navigate-back {
+    justify-content: flex-start;
+}
+
 .footer {
     grid-area: footer;
 }
@@ -102,7 +103,7 @@ body {
 @media screen and (min-width: 800px) {
     body {
         grid-template-columns: 1fr 192px 576px 1fr;
-        grid-template-rows: auto auto 1fr 48px;
+        grid-template-rows: auto 1fr 48px;
         grid-template-areas:
                 ". header header ."
                 ". nav main ."
