@@ -4,6 +4,7 @@
 @import url(../component-style/blockquote.css);
 @import url(../component-style/button.css);
 @import url(../component-style/header.css);
+@import url(../component-style/nav-back.css);
 
 body {
     display: flex;
@@ -55,18 +56,6 @@ body {
 .blog-content .social-share .icon-container .icon {
     width: 100%;
     height: 100%
-}
-
-/* Navigate back */
-.blog-content .navigate-back {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 8px;
-}
-
-.blog-content .navigate-back .back {
-    display: flex;
-    align-items: center;
 }
 
 @media screen and (min-width: 301px) {

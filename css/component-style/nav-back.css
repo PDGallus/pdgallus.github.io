@@ -1,0 +1,11 @@
+.navigate-back {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.navigate-back .back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
