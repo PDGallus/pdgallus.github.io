@@ -2,9 +2,109 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <title>P-Blog</title>
+        <link rel="stylesheet" href="../../css/pages/design-system.css">
     </head>
     <body>
-
+        <header class="header-container space">
+            <h1>Design-System</h1>
+        </header>
+        <nav class="navigation-container space">
+            <div class="foundations">
+                Foundations
+                <ul>
+                    <li><a class="link" href="#typo">Typography</a></li>
+                    <li><a class="link" href="#colors">Colors</a></li>
+                </ul>
+            </div>
+            <div class="components">
+                Components
+                <ul>
+                    <li><a class="link" href="#buttons">Buttons</a></li>
+                    <li><a class="link" href="#blockquote">Blockquote</a></li>
+                    <li><a class="link" href="#card">Card</a></li>
+                    <li><a class="link" href="#avatar">Avatar</a></li>
+                    <li><a class="link" href="#author-info">Author Info</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="blog-content space">
+            <h2>Foundations</h2>
+            <section id="typo"><h3>Typography</h3></section>
+            <h1>Headline 1</h1>
+            <h2>Headline 2</h2>
+            <h3>Headline 3</h3>
+            <p class="mobile-base">Font base size on mobile devices is 16px</p>
+            <p class="bigger-base">Font base size of devices with width > 600px is 18px</p>
+            <a class="link" href="#">Hyperlink</a>
+            <p><em>Italic Text</em></p>
+            <p><strong>Bold Text</strong></p>
+            <p>
+                <ins>Decorated Text</ins>
+            </p>
+            <section id="colors"><h3>Colors</h3></section>
+            <div id="primary" class="avatar-container">
+                <span><em>#1e60ff</em></span>
+            </div>
+            <div id="primary-border" class="avatar-container">
+                <span><em>#00bfff</em></span>
+            </div>
+            <div id="text" class="avatar-container">
+                <span><em>#1e60ff</em></span>
+            </div>
+            <div id="footer" class="avatar-container">
+                <span><em>#1e60ff</em></span>
+            </div>
+            <h2>Components</h2>
+            <section id="buttons"><h3>Buttons</h3></section>
+            <p>
+                <button class="primary-button">Primary Button</button>
+            </p>
+            <p>
+                <button class="secondary-button">Secondary Button</button>
+            </p>
+            <section id="blockquote"><h3>Blockquote</h3></section>
+            <div class="quote-container">
+                <div class="quote-banner"></div>
+                <blockquote cite="#">
+                    This is a blockquote with a surrounding container and an banner on the left hand site.
+                </blockquote>
+            </div>
+            <section id="card"><h3>Card</h3></section>
+            <div class="preview-card">
+                <div class="card-title">
+                    <h2>Card Title</h2>
+                </div>
+                <div class="image-container">
+                    <img class="thumbnail" src="../../images/placeholder-image.png" alt="Flutter Logo">
+                </div>
+                <div class="text">
+                    <h3>Teaser text in card which has full width</h3>
+                </div>
+                <div class="indicator">
+                    <img src="../../images/navigate_next-24px.svg" alt="Navigation Indicator">
+                </div>
+            </div>
+            <section id="avatar"><h3>Avatar</h3></section>
+            <div id="placeholder" class="avatar-container">
+                <img class="avatar" src="../../images/placeholder-image.png" alt="Avatar Image">
+            </div>
+            <section id="author-info"><h3>Author Info</h3></section>
+            <div class="author-info">
+                <div class="name">First Lastname</div>
+                <div class="author-title">Title</div>
+                <div class="employer">Employer</div>
+                <div class="bio">Short bio about person</div>
+                <div class="avatar-container">
+                    <img class="avatar" src="../../images/placeholder-image.png" alt="Avatar Image">
+                </div>
+            </div>
+        </main>
+        <footer class="footer space">
+            <div class="copyright">
+                © PDGallus 2021
+            </div>
+        </footer>
     </body>
 </html>

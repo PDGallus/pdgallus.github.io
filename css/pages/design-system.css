@@ -1,0 +1,124 @@
+@import url(../general-style.css);
+@import url(../component-style/avatar.css);
+@import url(../component-style/author-info.css);
+@import url(../component-style/button.css);
+@import url(../component-style/card.css);
+@import url(../component-style/blockquote.css);
+@import url(../component-style/footer.css);
+@import url(../component-style/header.css);
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr 48px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+.navigation-container {
+    grid-area: nav;
+    display: flex;
+}
+
+.navigation-container .components,
+.navigation-container .foundations {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-container .foundations {
+    margin-right: 32px;
+}
+
+.blog-content {
+    grid-area: main;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.blog-content .mobile-base {
+    font-size: 16px;
+}
+
+.blog-content .bigger-base {
+    font-size: 18px;
+}
+
+.blog-content .avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.blog-content #primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.blog-content #primary-border {
+    background-color: var(--primary-border-color);
+    color: white;
+}
+
+.blog-content #text {
+    background-color: var(--text-color);
+    color: white;
+}
+
+#primary,
+#primary-border,
+#text {
+    margin: 18px 0;
+}
+
+.blog-content #footer {
+    background-color: var(--footer-color);
+}
+
+.blog-content #placeholder {
+    background-color: var(--text-color);
+    font-size: 16px;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 600px) {
+    .header-container,
+    .navigation-container,
+    .blog-content,
+    .footer {
+        width: 568px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-columns: 1fr 192px 576px 1fr;
+        grid-template-rows: auto auto 1fr 48px;
+        grid-template-areas:
+                ". header header ."
+                ". nav main ."
+                ". footer footer .";
+    }
+
+    .header-container,
+    .navigation-container,
+    .blog-content,
+    .footer {
+        width: 100%;
+    }
+
+    .navigation-container {
+        flex-direction: column;
+        padding-top: 22px;
+    }
+
+}

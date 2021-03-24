@@ -10,11 +10,6 @@ body {
     grid-template-areas:
         "title"
         "main";
-    height: 100vh;
-}
-
-.space {
-    padding: 8px;
 }
 
 .header-container {
@@ -49,10 +44,6 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-    .space {
-        padding: 0 16px;
-    }
-
     .header-container,
     .blog-content {
         width: 568px;
